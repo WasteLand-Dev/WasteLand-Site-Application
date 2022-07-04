@@ -1,18 +1,21 @@
 {
   "name": "WasteLand",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official WasteLand Origin site application",
   "main": "index.js",
-  "homepage": "https://wlorigin.cf/",
-  "scripts": {
-    "start": "electron .",
-    "build" : "electron-builder --win",
-    "buildlinux": "electron-builder --linux deb"
-  },
   "author": "SpiritOTHawk <support@wlorigin.cf>",
   "license": "ISC",
+  "homepage": "https://app.wlorigin.cf/",
+  "bugs": {
+    "url": "https://github.com/WasteLand-Dev/WasteLand-Site-Application/issues"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win",
+    "buildlinux": "electron-builder --linux deb"
+  },
   "devdependencies": {
-    "electron": "^19.0.6",
+    "electron": "^19.0.7",
     "electron-builder": "^23.1.0"
   }
 }
