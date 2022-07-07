@@ -1,10 +1,23 @@
 {
   "name": "WasteLand",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Official WasteLand Origin site application",
   "main": "index.js",
   "author": "SpiritOTHawk <support@wlorigin.cf>",
   "license": "ISC",
+  "build": {
+    "linux": {
+      "category": "Network",
+      "icon": "icon.png",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "icon": "icon.png"
+    }
+  },
   "homepage": "https://app.wlorigin.cf/",
   "bugs": {
     "url": "https://github.com/WasteLand-Dev/WasteLand-Site-Application/issues"
@@ -15,7 +28,7 @@
     "buildlinux": "electron-builder --linux deb"
   },
   "devdependencies": {
-    "electron": "^19.0.7",
+    "electron": "^19.0.8",
     "electron-builder": "^23.1.0"
   }
 }

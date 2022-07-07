@@ -2,23 +2,17 @@ const {app, BrowserWindow} = require('electron');
 const path = require('path').join;
 const url = require('url').format;
 const os = require('os');
-const fs = require('fs');
 
 let win;
 let progressInterval;
+const iconPath = path(__dirname, 'icon.png');
 const osplatform = os.platform;
-const ostype = os.type;
-const osrelease = os.release;
-const osarch = os.arch;
-const ostotalmem = os.totalmem;
-const oshostname = os.hostname;
-const sysinf = "Information about your system." + `\n` + osplatform + `\n` + ostype + `\n` + osrelease + `\n` + osarch + `\n` + ostotalmem + `\n` + oshostname;
 
 async function createWindow() {
     win = new BrowserWindow({
         width: 1920,
         height: 1080,
-        icon: path(__dirname, 'icon.png'),
+        icon: iconPath,
         titleBarStyle: '',
         autoHideMenuBar: true,
         titleBarOverlay: {
@@ -56,18 +50,6 @@ async function progressBar() {
     }, Interval_delay)
 };
 
-async function createLogFile() {
-    fs.open('session.log', 'w', (err) => {
-        if(err) throw err;
-        console.log('Log file created');
-    });
-    fs.writeFile('session.log', sysinf, (err) => {
-        if(err) throw err;
-        console.log('Log written.');
-    });
-};
-
-createLogFile();
 app.on('ready', createWindow);
 
 if (osplatform == 'win32') {
