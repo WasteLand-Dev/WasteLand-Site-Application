@@ -28,7 +28,7 @@
     "buildlinux": "electron-builder --linux deb"
   },
   "devdependencies": {
-    "electron": "^19.0.8",
+    "electron": "^19.0.10",
     "electron-builder": "^23.1.0"
   }
 }
