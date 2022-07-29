@@ -1,6 +1,6 @@
 {
   "name": "WasteLand",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Official WasteLand Origin site application",
   "main": "index.js",
   "author": "SpiritOTHawk <support@wlorigin.cf>",
@@ -30,5 +30,8 @@
   "devdependencies": {
     "electron": "^19.0.10",
     "electron-builder": "^23.1.0"
+  },
+  "dependencies": {
+    "electron": "^19.0.10"
   }
 }
