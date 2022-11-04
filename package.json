@@ -1,6 +1,6 @@
 {
   "name": "WasteLand",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Official WasteLand Origin site application",
   "main": "index.js",
   "author": "SpiritOTHawk <support@wlorigin.cf>",
@@ -28,7 +28,7 @@
     "buildlinux": "electron-builder --linux deb"
   },
   "devdependencies": {
-    "electron": "^20.0.3",
-    "electron-builder": "^23.3.3"
+    "electron": "^21.2.2",
+    "electron-builder": "^23.6.0"
   }
 }
