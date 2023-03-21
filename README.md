@@ -15,7 +15,10 @@
 
 ## Debian and distributions based on it.
 
-```Download .deb file and install using dpkg```
+```Download .deb file and install using dpkg (sudo dpkg --install)```
 
 ## Arch and distributions based on it.
 ```sudo pacman -U WasteLand-1.1.0.pacman```
+
+## Other
+```Download .AppImage file and run it```
